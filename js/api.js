@@ -58,7 +58,7 @@ api(
     });
 
 const getDateBase = () => {
-    const movId = JSON.parse(localStorage.getItem("items"));
+    const movId = JSON.parse(localStorage.getItem("item"));
     return movId;
 };
 const getItem = (key) => {
