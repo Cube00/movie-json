@@ -63,13 +63,13 @@ const getDateBase = () => {
 };
 const getItem = (key) => {
     const movieId = getDateBase();
-    localStorage.setItem("items", JSON.stringify([...movieId, key]));
+    localStorage.setItem("item", JSON.stringify([...movieId, key]));
 };
 const removeItem = (key) => {
     const movieId = getDateBase();
 
     localStorage.setItem(
-        "items",
+        "item",
         JSON.stringify(movieId.filter((id) => id !== key))
     );
 };
